@@ -10,6 +10,8 @@
     <!-- Scripts -->
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <!-- w3data - script to import html files -->
+    <script type='text/javascript' src='js/w3data.js'></script>
     <script type='text/javascript' src='js/script.js'></script>
 
     <!-- CSS's -->
@@ -25,10 +27,56 @@
 
         <h1>Styleguide - Cap Online GUI Guide</h1>
         <small><code>based on bootstrap</code></small>
+        <small><code><a href="https://github.com/Piulres/styleguide" target="_blank">github</a></code></small>
 
         <hr>
         
-        <h1>Live preview</h1>
+        <h1>Live pages preview</h1>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="btn-toolbar">
+
+                    <div class="btn-group">
+
+                        <button type="button" class="btn toggle-page-1 btn-default">Page - 1</button>
+                        <button type="button" class="btn toggle-page-2 btn-default">Page - 2</button>
+                        <button type="button" class="btn toggle-page-3 btn-default">Page - 3</button>
+                        <button type="button" class="btn toggle-page-4 btn-default">Page - 4</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row"> 
+            <div class="page-1 display" w3-include-html="index-1.html">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="page-2 display" w3-include-html="index-2.html">
+                
+            </div> 
+        </div>
+
+        <div class="row">
+            <div class="page-3 display" w3-include-html="index-3.html">
+                
+            </div> 
+        </div>
+        
+        <div class="row">
+            <div class="page-4 display" w3-include-html="index-4.html">
+                
+            </div> 
+        </div>
        
         <!-- Navbar
         ================================================== -->
@@ -795,6 +843,11 @@
         </section>
 
     </div>
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
 
 </body>
 </html>

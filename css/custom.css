@@ -1,3 +1,13 @@
+.display {
+    display: none;
+}
+.page-1,
+.page-2,
+.page-3,
+.page-4 {
+    padding-top: 50px;
+}
+
 thead {
 	background-color: #00205c;
     font-family: verdana;
