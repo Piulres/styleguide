@@ -41,10 +41,10 @@
 
                     <div class="btn-group">
 
-                        <button type="button" class="btn toggle-page-1 btn-default">Page - 1</button>
-                        <button type="button" class="btn toggle-page-2 btn-default">Page - 2</button>
-                        <button type="button" class="btn toggle-page-3 btn-default">Page - 3</button>
-                        <button type="button" class="btn toggle-page-4 btn-default">Page - 4</button>
+                        <button type="button" class="btn toggle-page-1 btn-default" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Page - 1</button>
+                        <button type="button" class="btn toggle-page-2 btn-default" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Page - 2</button>
+                        <button type="button" class="btn toggle-page-3 btn-default" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Page - 3</button>
+                        <button type="button" class="btn toggle-page-4 btn-default" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Page - 4</button>
 
                     </div>
 
@@ -54,27 +54,43 @@
 
         </div>
 
-        <div class="row"> 
-            <div class="page-1 display" w3-include-html="index-1.html">
-                
+        <div class="row">
+            <div class="collapse" id="collapse1">
+
+                <div class="page-1" w3-include-html="index-1.html">
+                    
+                </div>
+
             </div>
         </div>
 
         <div class="row">
-            <div class="page-2 display" w3-include-html="index-2.html">
-                
+            <div class="collapse" id="collapse2">
+
+                <div class="page-2" w3-include-html="index-2.html">
+                    
+                </div>
+
             </div> 
         </div>
 
         <div class="row">
-            <div class="page-3 display" w3-include-html="index-3.html">
-                
+            <div class="collapse" id="collapse3">
+
+                <div class="page-3" w3-include-html="index-3.html">
+                    
+                </div>
+
             </div> 
         </div>
-        
+
         <div class="row">
-            <div class="page-4 display" w3-include-html="index-4.html">
-                
+            <div class="collapse" id="collapse4">
+
+                <div class="page-4" w3-include-html="index-4.html">
+                    
+                </div>
+
             </div> 
         </div>
        
