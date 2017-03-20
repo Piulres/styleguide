@@ -3,7 +3,7 @@ based on bootstrap
 
 ----
 ### Version
-v1
+v2
 
 ----
 ### Tech
