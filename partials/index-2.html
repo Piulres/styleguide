@@ -1,81 +1,243 @@
-<div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Styleguide</title>
+    <meta name="description" content="Cap Online GUI Guide">
+    <meta name="author" content="@Piulres">
+    <meta charset="UTF-8">
+
+    <!-- Scripts -->
+
+    <!-- jquery -->
+    <script type='text/javascript' src='../js/jquery.js'></script>
+
+    <!-- boostrap -->
+    <script type='text/javascript' src='../js/bootstrap.min.js'></script>
+
+    <!-- w3data - script to import html files // notrequired -->
+    <script type='text/javascript' src='../js/w3data.js'></script>
     
-     <div class="shield">
+    <!-- datepicker -->
+    <script type='text/javascript' src='../js/bootstrap-datepicker.js'></script>
+
+    <!-- custom calls -->
+    <script type='text/javascript' src='../js/script.js'></script>
+
+    <!-- CSS's -->
+    <link href='../css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='../css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href='../css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='../css/bootstrap-theme-1.min.css' rel='stylesheet' type='text/css'>
+    <link href='../css/datepicker.css' rel='stylesheet' type='text/css'>
+    <link href='../css/custom.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="page">
+
+<div class="container">
+
+    <a href="../index.html">Back to Menu</a>
+    <h1>Cadastro - Pessoa Jurídica</h1>
+    
+    <div class="shield">
        
-        <legend>Legend</legend>
+        <legend>Informação da Empresa</legend>
         
         <fieldset class="shield-content">
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <label for="inputEmail" class="control-label">Email</label>
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+
+            <div class="row">
+                
+                <div class="col-lg-6">
+                    <label class="control-label">Cnpj</label>
+                    <input type="text" class="form-control" placeholder="00.000.000/0000-00">
                 </div>
+
+                <div class="col-lg-6">
+                    <label class="control-label">Razão Social</label>
+                    <input type="text" class="form-control">
+                </div>
+
             </div>
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <label for="inputPassword" class="control-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+            <div class="row">
+                
+                <div class="col-lg-6">
+                    <label class="control-label">Nome Fantasia (Opcional)</label>
+                    <input type="text" class="form-control">
                 </div>
-                <div class="col-lg-10">
+
+                <div class="col-lg-3">
+
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Checkbox
+                            <input type="checkbox">Isento de Inscrição Estadual/Municipal
                         </label>
                     </div>
+
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <label for="textArea" class="control-label">Textarea</label>
-                    <textarea class="form-control" rows="3" id="textArea"></textarea>
-                    <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+
+                <div class="col-lg-3">
+                    <label class="control-label">Inscrição Estadual ou Municipal</label>
+                    <input type="text" class="form-control">
                 </div>
+
             </div>
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <label class="control-label">Radios</label>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                            Option one is this
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                            Option two can be something else
-                        </label>
-                    </div>
+
+            <div class="row">
+                
+                <div class="col-lg-3">
+                    <label class="control-label">Telefone Comercial 1</label>
+                    <input type="text" class="form-control" placeholder="(00)0000-0000">
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <label for="select" class="control-label">Selects</label>
-                    <select class="form-control" id="select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                    <br>
-                    <select multiple="" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+
+                <div class="col-lg-3">
+                    <label class="control-label">Ramal (Opcional)</label>
+                    <input type="text" class="form-control">
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
-                    <button class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                <div class="col-lg-3">
+                    <label class="control-label">Telefone Comercial 2 (Opcional)</label>
+                    <input type="text" class="form-control" placeholder="(00)0000-0000">
                 </div>
+
+                <div class="col-lg-3">
+                    <label class="control-label">Ramal (Opcional)</label>
+                    <input type="text" class="form-control">
+                </div>
+
             </div>
+            
         </fieldset>
+
+        <legend>Endereço</legend>
+        
+        <fieldset class="shield-content">
+        
+            <div class="row">
+                
+                <div class="col-lg-6">
+                    <label class="control-label">Cep</label>
+                    <input type="text" class="form-control" placeholder="00000-000">    
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="control-label">Logradouro</label>
+                    <input type="text" class="form-control" placeholder="Rua, avenida, travessa">    
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div class="col-lg-3">
+                    <label class="control-label">Número</label>
+                    <input type="text" class="form-control">   
+                </div>
+
+                <div class="col-lg-3">
+                    <label class="control-label">Complemento (Opcional)</label>
+                    <input type="text" class="form-control" placeholder="Ex: bl 1 apto 201">   
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="control-label">Bairro</label>
+                    <input type="text" class="form-control">   
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div class="col-lg-5">
+                    <label class="control-label">Cidade</label>
+                    <input type="text" class="form-control">   
+                </div>
+
+                <div class="col-lg-1">
+                    <label for="select" class="control-label">Uf</label>
+                    <select class="form-control" id="select">
+                        <option selected disabled></option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AM</option>
+                        <option>AP</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MG</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>PR</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>RS</option>
+                        <option>SC</option>
+                        <option>SE</option>
+                        <option>SP</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+        <legend>Contato do representante da empresa</legend>
+
+        <fieldset class="shield-content">
+            
+            <div class="row">
+                
+                <div class="col-lg-6">
+                    <label class="control-label">Nome</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-lg-6">
+                    <label class="control-label">Email</label>
+                    <input type="text" class="form-control">
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div class="col-lg-6">
+                    <label class="control-label">Telefone Celular</label>
+                    <input type="text" class="form-control" placeholder="(00)0000-0000">                    
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Desejo receber informações sobre a SulAmérica Capitalização no meu endereço eletrônico
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </fieldset>       
 
     </div>
 
 </div>
+
+</body>
+</html>
