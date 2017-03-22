@@ -33,7 +33,7 @@
 
 .page-title {
     text-transform: uppercase;
-    margin: 30px 0;
+    margin: 0px;
     font-size: 16px;
     font-weight: 600;
     color: #00205c;
@@ -133,4 +133,82 @@ header .navbar-default {
 
 .menu-bar .navbar-collapse {
     padding: 0;
+}
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+}
+
+.button-area {
+    padding: 30px 0px;
+}
+
+.button-area select {
+    font-size: 12px;
+}
+
+header, section {
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    text-align: center;
+}
+
+.modal-header {
+    background-color: #00205c;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
+}
+.modal-header .close {
+    color: #fff;
+}
+
+.modal-body {
+    overflow: auto;
+}
+
+.box-modal {
+    text-align: center;
+    display: block;
+    width: 135px;
+    height: 135px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #666;
+    background-color: white;
+    position: relative;
+}
+.box-modal:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.box-modal img  {
+    margin-top: 7px;
+}
+
+.box-modal p {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #ccc;    
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    overflow: auto;
+    margin-bottom: -10px;
+}
+
+footer p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+    padding: 50px 0px;
 }
