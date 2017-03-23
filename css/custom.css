@@ -2,6 +2,44 @@
     display: none;
 }
 
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 100px;
+    background-color: #f7f7f7;
+}
+
+
+header .navbar-default {
+    min-height: 100px;
+}
+
+
+header, section {
+    margin-bottom: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    background-color: #d6d6d6;
+}
+
+footer p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+    padding-top: 45px;
+}
+
+
 .custom-datepicker i.fa-calendar {    
     color: #54698d;
 }
@@ -39,17 +77,24 @@
     color: #00205c;
 }
 
+.page .page-title {
+    margin: 30px 0px;
+}
+
 .list-itens {
     padding: 0;
 }
+
 .list-itens fieldset {
     padding: 0;
 }
+
 .list-itens ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .list-itens ul li {
     padding: 14px 0px 14px 30px;
     min-height: 60px;
@@ -59,21 +104,21 @@
     text-transform: uppercase;
     border-bottom: 1px solid #ccc!important;
 }
+
 .list-itens ul li:hover {
     background-color: #e3e3e3;
 }
+
 .list-itens ul li .ico-type {
     width: 28px;
     margin-right: 20px;
 }
+
 .list-itens ul li .ico-download {
     width: 15px;
     margin-left: 10px;
 }
 
-header .navbar-default {
-    min-height: 100px;
-}
 
 .logo {
     max-height: 50px;
@@ -90,12 +135,14 @@ header .navbar-default {
 .nav-user {
     float: right;
 }
+
 .nav-user .dropdown {
     margin: 25px 0px 0px 0px;
     width: 100%;
     min-width: 230px;
     height: 40px;
 }
+
 .nav-user .dropdown .dropdown-toggle {    
     width: 100%;        
     min-width: 230px;        
@@ -105,6 +152,7 @@ header .navbar-default {
     text-transform: uppercase;
     font-size: 10px;
 }
+
 .nav-user .dropdown .dropdown-toggle:hover {    
     text-decoration: none;
 }
@@ -121,6 +169,7 @@ header .navbar-default {
     font-size: 10px;
     float: right;
 }
+
 .nav-user .dropdown .caret {
     margin: 20px 0px 0px 10px;
     float: right;
@@ -135,8 +184,18 @@ header .navbar-default {
     padding: 0;
 }
 
-.navbar.navbar-default {
+.menu-bar .navbar.navbar-default {
     margin-bottom: 0;
+    height: 55px;
+}
+
+.menu-bar .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 .button-area {
@@ -147,7 +206,8 @@ header .navbar-default {
     font-size: 12px;
 }
 
-header, section {
+
+table {
     margin-bottom: 30px;
 }
 
@@ -156,12 +216,21 @@ table td {
     text-align: center;
 }
 
+table td {
+    border-right: 1px solid #fff;
+}
+
+table td:last-child {
+    border-right: none;
+}
+
 .modal-header {
     background-color: #00205c;
     text-transform: uppercase;
     font-size: 22px;
     color: #fff;
 }
+
 .modal-header .close {
     color: #fff;
 }
@@ -184,7 +253,11 @@ table td {
     background-color: white;
     position: relative;
 }
-.box-modal:hover {
+
+.box-modal:hover,
+.box-modal:active,
+.box-modal:focus {
+    
     color: #666;
     text-decoration: none;
 }
@@ -197,18 +270,69 @@ table td {
     margin-top: 10px;
 }
 
-footer {
-    background-color: #ccc;    
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    overflow: auto;
-    margin-bottom: -10px;
+.shield-detalhe {
+    padding: 30px;
 }
 
-footer p {
-    text-align: center;
+.shield-detalhe .type {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(247, 99, 25);
+    font-weight: 600;
+}
+
+.shield-detalhe .name {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(27, 54, 93);
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.detalhes {
+    margin-bottom: 150px;
+}
+
+.detalhes .title {
+    font-size: 10px;
     text-transform: uppercase;
     color: #666;
-    padding: 50px 0px;
+    font-weight: 600;
+}
+
+.detalhes .value {
+    color: #666;
+    font-size: 12px;
+}
+.detalhes .panel-title a:hover {
+    text-decoration: none;
+}
+
+.detalhes .panel-title a span {
+    font-size: 9px;
+    text-transform: none;
+    color: rgb(205,204,204);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.detalhes .panel-title .add {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.detalhes .panel-title .add img  {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.detalhes .box-title {
+    font-size: 14px;
+    color: rgb(102,102,102);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
