@@ -75,6 +75,7 @@ footer p {
     font-size: 16px;
     font-weight: 600;
     color: #00205c;
+    margin-bottom: 30px;
 }
 
 .page .page-title {
@@ -200,6 +201,7 @@ footer p {
 
 .button-area select {
     font-size: 12px;
+    margin-top: 0;
 }
 
 
