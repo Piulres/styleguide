@@ -2543,7 +2543,7 @@ output {
   border-radius: 3px;
   border-color: #ccc;
   border-style: solid;
-  background-color: transparent;
+  background-color: #fff;
   margin-top: 10px;
   margin-bottom: 20px;
   color: #666;
@@ -9611,6 +9611,7 @@ legend {
     height: auto;
     overflow: auto;
     padding: 0px 30px;
+    padding-bottom: 20px;
 }
 
 .custom-datepicker {

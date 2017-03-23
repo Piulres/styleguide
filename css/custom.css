@@ -198,10 +198,6 @@ footer p {
     text-align: center;
 }
 
-.button-area {
-    padding: 30px 0px;
-}
-
 .button-area select {
     font-size: 12px;
 }
@@ -274,14 +270,16 @@ table td:last-child {
     padding: 30px;
 }
 
-.shield-detalhe .type {
+.shield-detalhe .type,
+.shield-detalhe .item1 {
     font-size: 12px;
     text-transform: uppercase;
     color: rgb(247, 99, 25);
     font-weight: 600;
 }
 
-.shield-detalhe .name {
+.shield-detalhe .name,
+.shield-detalhe .item2 {
     font-weight: 600;
     font-size: 16px;
     color: rgb(27, 54, 93);
@@ -293,14 +291,16 @@ table td:last-child {
     margin-bottom: 150px;
 }
 
-.detalhes .title {
+.detalhes .title,
+.detalhes .item1 {
     font-size: 10px;
     text-transform: uppercase;
     color: #666;
     font-weight: 600;
 }
 
-.detalhes .value {
+.detalhes .value,
+.detalhes .item2 {
     color: #666;
     font-size: 12px;
 }
@@ -335,4 +335,99 @@ table td:last-child {
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-top: 0px;
+}
+
+.warning {
+    margin-right: 10px;
+    font-size: 12px;
+    position: relative;
+}
+
+.navigation {
+    display: block;
+    width: 100%;
+    height: 45px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.16);
+}
+
+.navigation .item {
+    height: 45px;
+    background-color: rgb(245,245,245);
+    border: 1px solid rgb(220,220,220);
+    color: rgb(220,220,220);
+    border-left: 0px;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.navigation .item.act::after,
+.navigation .item.edt::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    z-index: 999;
+    border-left: 15px solid rgb(245,245,245);
+}
+
+.navigation .item:last-child::after {
+    border: none;
+}
+
+.navigation .item.act {
+    color: rgb(255,255,255);
+    background-color: rgb(248,113,55);
+}
+
+.navigation .item.act::after {
+    border-left: 15px solid rgb(248,113,55);
+}
+
+.navigation .item.edt {
+    color: rgb(248,113,55);
+    background-color: rgb(255,255,255);
+}
+
+.navigation .item.edt::after {
+    border-left: 15px solid rgb(255,255,255);
+}
+
+.navigation .item:first-child {
+    border-radius: 5px 0 0 5px;
+    border-left: 1px solid rgb(220,220,220);
+}
+
+.navigation .item:last-child {    
+    border-radius: 0px 5px 5px 0px;        
+    border-right: 1px solid rgb(220,220,220);
+}
+
+.button-area button {
+    margin-left: 20px;
+}
+
+.loader {
+    border: 16px solid #fff; /* Light grey */
+    border-top: 16px solid rgb(248,113,55); /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -132,7 +132,54 @@
 
         </div>
 
-    </section>    
+    </section>
+
+    <!-- Button Area -->
+    <section>
+
+        <div class="container">
+        
+            <div class="button-area">
+
+                <div class="row">
+                        
+                    <div class="col-lg-12">
+
+                        <button type="button" class="btn btn-default pull-right">Anexar Documento</button>
+                        
+                        <button type="button" class="btn btn-outlined pull-right">Gerar Documento</button>
+                        
+                        <button type="button" class="btn btn-outlined pull-right">Gerar Boleto</button>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Navigation -->
+    <section>
+
+        <div class="container"> 
+        
+            <div class="navigation">
+                
+                <div class="item col-lg-2 edt"><i class="fa fa-exclamation-triangle warning" aria-hidden="true"></i>Informações do Cliente</div>
+                <div class="item col-lg-2 edt"></i>Informações da Proposta</div>
+                <div class="item col-lg-2 act">Carta Caução</div>
+                <div class="item col-lg-2">Gerar Proposta</div>
+                <div class="item col-lg-2">Boleto / Formulário</div>
+                <div class="item col-lg-2">Anexar Documentos</div>
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- Detalhes Header -->
     <section>
@@ -141,8 +188,8 @@
             
             <div class="shield shield-detalhe">
 
-                <p class="type">Cadastro Pessoa Fisisca</p>
-                <p class="name">João da Silva Carvalho</p>
+                <p class="item1">Pendente de Documentação</p>
+                <p class="item2">8888.02.000002.24-7</p>
 
             </div>
 
@@ -165,20 +212,34 @@
                         
                         <div class="shield">
                             
-                            <legend>Informações Pessoa Física</legend>
+                            <legend>Pendências</legend>
+                    
+                            <div class="shield-content">
+
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <p class="item2"><i class="warning fa fa-exclamation-triangle" aria-hidden="true"></i>Falta de Pagamento</p>
+                                    </div>  
+
+                                </div>                                
+
+                            </div>
+
+                            <legend>Informações da Proposta</legend>
                     
                             <div class="shield-content">
 
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <p class="title">Cpf</p>
-                                        <p class="value">433.654.489-09</p>
+                                        <p class="item1">Status</p>
+                                        <p class="item2">Pendente de Documentação</p>
                                     </div>
 
                                     <div class="col-lg-6">
-                                        <p class="title">Orgão Emissor</p>
-                                        <p class="value">DETRAN / RJ</p>
+                                        <p class="item1">Valor Título 2</p>
+                                        <p class="item2">R$ 4.000,00</p>
                                     </div>
 
                                 </div>
@@ -186,92 +247,119 @@
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <p class="title">Nome</p>
-                                        <p class="value">João da Silva Carvalho</p>
+                                        <p class="item1">Nome / Razão Social</p>
+                                        <p class="item2"><a href="">Hugo Felipe Longo de Souza</a></p>
                                     </div>
 
                                     <div class="col-lg-6">
-                                        <p class="title">Data de Expedição</p>
-                                        <p class="value">13/05/2015</p>
+                                        <p class="item1">Encargos no Calculo do Título</p>
+                                        <p class="item2">Não</p>
                                     </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-6">
+                                        <p class="item1">Produto</p>
+                                        <p class="item2">Sulamérica Garantia de Aluguel 15 Meses</p>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <p class="item1">Multiplicador Calco do Título</p>
+                                        <p class="item2">2.5</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-6">
+                                        <p class="item1">Registro Susep</p>
+                                        <p class="item2">348704</p>
+                                    </div>                                    
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-6">
+                                        <p class="item1">Valor Título 1</p>
+                                        <p class="item2">R$ 4.000,00</p>
+                                    </div>                                    
+
+                                </div>
+
+                            </div>
+
+                            <legend>Carta Caução</legend>
+                    
+                            <div class="shield-content">
+
+                                <div class="row">
+
+                                    <div class="col-lg-6">
+                                        <p class="item1">Locador</p>
+                                        <p class="item2">José Santos</p>
+                                    </div>  
+
+                                    <div class="col-lg-6">
+                                        <p class="item1">Cidade / Uf</p>
+                                        <p class="item2">Rio de Janeiro / Rj</p>
+                                    </div>  
 
                                 </div>  
 
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <p class="title">Sexo</p>
-                                        <p class="value">Masculino</p>
-                                    </div>
+                                        <p class="item1">Representante Legal</p>
+                                        <p class="item2">Imobiliária / Lince Imobiliária</p>
+                                    </div>  
 
                                     <div class="col-lg-6">
-                                        <p class="title">Telefone Celular</p>
-                                        <p class="value">(21) 99826-9375</p>
-                                    </div>
+                                        <p class="item1">Finalidade do Imóvel</p>
+                                        <p class="item2">Residêncial</p>
+                                    </div>  
 
                                 </div>
 
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <p class="title">Data de Nascimento</p>
-                                        <p class="value">27/10/1985</p>
-                                    </div>
+                                        <p class="item1">Cep</p>
+                                        <p class="item2">56745-090</p>
+                                    </div>  
 
                                     <div class="col-lg-6">
-                                        <p class="title">Telefone Fixo</p>
-                                        <p class="value">(21) 2760-8362</p>
-                                    </div>
+                                        <p class="item1">Tipo de Imóvel</p>
+                                        <p class="item2">Apartamento</p>
+                                    </div>  
 
                                 </div>
 
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <p class="title">Rg</p>
-                                        <p class="value">66.455.678-7</p>
-                                    </div>
+                                        <p class="item1">Endereço</p>
+                                        <p class="item2">Rua Bolívar 176 / Apto 301</p>
+                                    </div>  
 
                                     <div class="col-lg-6">
-                                        <p class="title">Email</p>
-                                        <p class="value">joao.carvalho@gmail.com</p>
-                                    </div>
-
-                                </div>                          
-
-                            </div>
-
-                            <legend>Informações Pessoa Física</legend>
-                    
-                            <div class="shield-content">
-
-                                <div class="row">
-
-                                    <div class="col-lg-6">
-                                        <p class="title">Cep</p>
-                                        <p class="value">22451-897</p>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <p class="title">Bairro</p>
-                                        <p class="value">Copacabana</p>
-                                    </div>
+                                        <p class="item1">Locatário é diferente do cliente?</p>
+                                        <p class="item2">Não</p>
+                                    </div>  
 
                                 </div>
 
                                 <div class="row">
 
                                     <div class="col-lg-6">
-                                        <p class="title">Logradouro / Número / Complemento</p>
-                                        <p class="value">Rua Bolívar 176 / Apto 301</p>
-                                    </div>
+                                        <p class="item1">Bairro</p>
+                                        <p class="item2">Copacabana</p>
+                                    </div> 
 
-                                    <div class="col-lg-6">
-                                        <p class="title">Cidade / Uf</p>
-                                        <p class="value">Rio de Janeiro / RJ</p>
-                                    </div>
-
-                                </div>
+                                </div>  
 
                             </div>
 
