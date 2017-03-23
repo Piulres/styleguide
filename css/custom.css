@@ -2,7 +2,6 @@
     display: none;
 }
 
-
 html {
     position: relative;
     min-height: 100%;
@@ -418,6 +417,15 @@ table td:last-child {
 
 .button-area button {
     margin-left: 20px;
+}
+
+.remove {
+    margin-top: 35px;
+    display: block;
+}
+
+.btn-controlador {
+    margin-top: 20px;
 }
 
 .loader {
