@@ -51,8 +51,15 @@ footer p {
     padding-top: 50px;
 }
 
-.sexo {
+.radio.sexo,
+.radio.encargos,
+.radio.registro {
     margin-top: 20px; 
+}
+
+.encargos label,
+.registro label {    
+    margin-right: 20px;
 }
 
 .checkbox {
@@ -420,12 +427,76 @@ table td:last-child {
 }
 
 .remove {
-    margin-top: 35px;
+    margin-top: 20px;
     display: block;
 }
 
 .btn-controlador {
     margin-top: 20px;
+}
+
+.proposta .btn-link {
+    padding-left: 0;
+}
+
+.proposta p.header {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 600;
+}
+
+.proposta .title {
+    margin-top: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 600;
+}
+
+.proposta .value {
+    color: #666;
+    font-size: 12px;
+}
+
+.proposta h2 span {
+    font-weight: 600;
+}
+
+.proposta .documento {
+    color: rgb(0,32,92);
+}
+
+.proposta .box {
+    margin-top: 50px;
+}
+
+.proposta .box-doc {
+    text-align: center;
+    display: block;
+    width: 135px;
+    height: 135px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #666;
+    background-color: white;
+    position: relative;
+}
+
+.proposta .box-doc img {
+    margin-top: 7px;
+}
+
+.proposta .box-doc p {
+    margin-top: 10px;
+}
+
+.proposta .anexo {
+    margin-top: 13px;
+    margin-left: 50px;
 }
 
 .loader {
@@ -437,7 +508,16 @@ table td:last-child {
     animation: spin 2s linear infinite;
 }
 
+label .fa-info-circle {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.aba-teste {
+    margin: 30px 0;
 }
