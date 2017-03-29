@@ -66,6 +66,11 @@ footer p {
     margin-top: 35px; 
 }
 
+.aba-3 .checkbox {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 .sexo label {
     text-transform: none;
     margin-right: 10px;
@@ -511,6 +516,63 @@ table td:last-child {
 label .fa-info-circle {
     font-size: 13px;
     margin-left: 5px;
+}
+
+.box-home {
+    box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.16);
+    border: 1px solid #ccc;
+    background: #fff !important;
+    font-family: verdana;
+    font-size: 10px;
+    color: #666666;
+    padding: 40px 20px;
+    margin-bottom: 32px;
+    min-height: 160px;
+}
+.box-home img {
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    width: 45px;
+    max-width: 100%;
+    height: auto;
+}
+.box-home .title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 12px;
+    margin-bottom: 5px;
+}
+.box-home.box-auth .title, .box-home.box-auth .link {
+    color: #00205c;
+}
+.box-home .link {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+.box-home.box-non-auth .title, .box-home.box-non-auth .link {
+    color: #f37125;
+}
+.box-home.box-non-auth .title, .box-home.box-non-auth .link {
+    color: #f37125;
+}
+img.banner {
+    min-height: 355px!important;    
+    max-width: 100%;
+    height: auto;
+}
+
+.home .box-left {
+    padding-left: 0px; 
+}
+
+.home .box-right {
+    padding-right: 0px; 
 }
 
 @keyframes spin {
