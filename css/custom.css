@@ -529,6 +529,7 @@ label .fa-info-circle {
     margin-bottom: 32px;
     min-height: 160px;
 }
+
 .box-home img {
     float: left;
     margin-right: 20px;
@@ -537,6 +538,7 @@ label .fa-info-circle {
     max-width: 100%;
     height: auto;
 }
+
 .box-home .title {
     font-size: 16px;
     text-transform: uppercase;
@@ -544,9 +546,11 @@ label .fa-info-circle {
     line-height: 12px;
     margin-bottom: 5px;
 }
+
 .box-home.box-auth .title, .box-home.box-auth .link {
     color: #00205c;
 }
+
 .box-home .link {
     font-size: 10px;
     text-transform: uppercase;
@@ -555,14 +559,17 @@ label .fa-info-circle {
     display: block;
     margin-top: 10px;
 }
+
 .box-home.box-non-auth .title, .box-home.box-non-auth .link {
     color: #f37125;
 }
+
 .box-home.box-non-auth .title, .box-home.box-non-auth .link {
     color: #f37125;
 }
+
 img.banner {
-    min-height: 355px!important;    
+    min-height: 355px!important;
     max-width: 100%;
     height: auto;
 }
@@ -573,6 +580,58 @@ img.banner {
 
 .home .box-right {
     padding-right: 0px; 
+}
+
+.user {
+    margin-bottom: 30px;
+}
+
+.user .btn-user {
+    width: 100%;
+}
+
+.user .modal-dialog,
+.user .modal-footer {
+    text-align: left;
+}
+
+.user .modal-dialog {
+    width: 400px;
+    margin: 80px auto;
+}
+
+.user .modal-content {
+    padding: 20px;
+}
+
+.user .esqueceu {
+    font-size: 10px;
+    color: rgb(27,54,93);
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.n-page {
+    margin-bottom: 30px;
+}
+
+.n-page input {
+    margin: 0;
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.n-page p {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.item-num {    
+    color: #fc4c04;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 
 @keyframes spin {

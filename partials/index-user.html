@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Styleguide</title>
+    <meta name="description" content="Cap Online GUI Guide">
+    <meta name="author" content="@Piulres">
+    <meta charset="UTF-8">
+
+    <!-- Scripts -->
+
+    <!-- jquery -->
+    <script type='text/javascript' src='../js/jquery.js'></script>
+
+    <!-- boostrap -->
+    <script type='text/javascript' src='../js/bootstrap.min.js'></script>
+
+    <!-- w3data - script to import html files // notrequired -->
+    <script type='text/javascript' src='../js/w3data.js'></script>
+    
+    <!-- datepicker -->
+    <script type='text/javascript' src='../js/bootstrap-datepicker.js'></script>
+
+    <!-- custom calls -->
+    <script type='text/javascript' src='../js/script.js'></script>
+
+    <!-- CSS's -->
+    <link href='../css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='../css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href='../css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='../css/bootstrap-theme-1.min.css' rel='stylesheet' type='text/css'>
+    <link href='../css/datepicker.css' rel='stylesheet' type='text/css'>
+    <link href='../css/custom.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <header>
+    
+        <div class="navbar navbar-default">
+
+            <div class="container">
+
+                <div class="navbar-header">
+                    
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#"><img class="logo" src="../img/logo.jpg"></a>
+                
+                </div>
+
+                <div class="navbar-collapse collapse navbar-responsive-collapse"> 
+
+                    <ul class="nav-user nav navbar-nav">
+
+                        <div class="user dropdown">
+
+                            <a href="#" data-toggle="modal" data-target="#previewModal">
+                                <img class="avatar" src="../img/ico-user.png">
+                            </a>
+
+                             <div id="previewModal" class="modal" style="display: none;">
+
+                                <div class="modal-dialog">
+
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+
+                                            <label class="control-label">Nome do Usuário</label>
+                                            <input type="text" class="form-control">
+
+                                            <label class="control-label">Senha</label>
+                                            <input type="password" class="form-control">
+
+                                            <button type="button" class="btn-user btn btn-primary">Login</button>
+
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">Lembrar-me
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <a class="esqueceu" href="">Esqueceu sua senha?</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+        
+        <div class="menu-bar">
+
+            <div class="container">
+
+                <div class="navbar navbar-default"> 
+
+                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+                        <ul class="nav navbar-nav">
+
+                            <li class="active"><a href="#">Início</a></li>
+                            <li><a href="#">Simulador</a></li>                    
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        
+        <div class="container">
+
+            <div class="row">                
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <a href=""><img class="banner" src="../img/banner-home.jpg"></a>
+                    </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+            
+        <p>Copyright © Sulámerica - Todos os direitos reservados | versão 6.15.0412</p>
+
+    </footer>
+
+</body>
+</html>
