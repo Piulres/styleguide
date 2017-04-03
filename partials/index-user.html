@@ -58,7 +58,7 @@
                     <ul class="nav nav-user navbar-nav navbar-right">
                         <li class="active"><a href="#">Início</a></li>
                         <li><a href="#">Simulador</a></li>    
-                        <li><a href="#" data-toggle="modal" data-target="#previewModal">Login</a></li>
+                        <li><a href="#" class="modal-click" data-toggle="modal" data-target="#previewModal">Login</a></li>
                     </ul>
 
                     <div class="user">
@@ -67,9 +67,9 @@
 
                             <div class="modal-dialog">
 
-                                <div class="modal-content">
+                                <div class="modal-content modal-login">
 
-                                <img class="logo-login" src="../img/logo.png">
+                                    <img class="logo-login" src="../img/logo.png">
 
                                     <div class="modal-body">
 
@@ -95,7 +95,9 @@
 
                                 </div>
 
-                                <div class="modal-content display">
+                                <div class="modal-content modal-forgot display">
+
+                                    <img class="logo-login" src="../img/logo.png">
 
                                     <div class="modal-body">
 
@@ -112,8 +114,27 @@
                                     </div>
 
                                     <div class="modal-footer">
-                                        <button type="button" class="cancel btn btn-default pull-left">Cancelar</button>
-                                        <button type="button" class="btn btn-primary pull-right">Confirmar</button>
+                                        <button type="button" class="cancelar  btn btn-default pull-left">Cancelar</button>
+                                        <button type="button" class="confirmar btn btn-primary pull-right">Confirmar</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-content modal-verify display">
+
+                                    <img class="logo-login" src="../img/logo.png">
+
+                                    <div class="modal-body">
+
+                                        <h3>Verifique seu email</h3></br>
+                                        <p>Enviamos a você um email com um link para concluir a redefinição de sua senha.</p>
+                                        <p>Não localizou o email? Verifique sua pasta de spam.</p>
+                                        <p>Caso ainda não consiga fazer login, reenvie-nos o email ou entre em contato com o administrador do Salesforce.</p>
+
+                                   </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="verificar btn btn-primary">Retornar ao login</button>
                                     </div>
 
                                 </div>

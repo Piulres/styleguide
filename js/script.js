@@ -19,17 +19,37 @@ $( document ).ready(function() {
 	// this works 
 	// $('.input-datepicker').datepicker()
 
-	$('.esqueceu').on('click', function(e) {
-      $('.modal-content').toggleClass("display"); //you can list several class names 
-      e.preventDefault();
+	
+	// modal login user
+
+ 	$('.esqueceu').on('click', function(e) {
+		$('.modal-content.modal-login').addClass("display");
+		$('.modal-content.modal-forgot').removeClass("display");
+		e.preventDefault();
     });
 
-    $('.cancel').on('click', function(e) {
-      $('.modal-content').toggleClass("display"); //you can list several class names 
-      e.preventDefault();
+    $('.confirmar').on('click', function(e) {
+		$('.modal-content.modal-forgot').addClass("display");
+		$('.modal-content.modal-verify').removeClass("display");
+		e.preventDefault();
+    });
+
+    $('.verificar').on('click', function(e) {
+		$('.modal-content.modal-verify').addClass("display");
+		$('.modal-content.modal-login').removeClass("display");
+		e.preventDefault();
+    });
+
+    $('.cancelar').on('click', function(e) {
+   		$('#previewModal').modal('hide');
+   		e.preventDefault();
+    });
+
+    $('.modal-click').on('click', function(e) {
+		$('.modal-content.modal-forgot').addClass("display");
+		$('.modal-content.modal-verify').addClass("display");
+		$('.modal-content.modal-login').removeClass("display");
+		e.preventDefault();
     });
 
 });
-
-
-

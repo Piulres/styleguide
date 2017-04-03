@@ -621,6 +621,10 @@ img.banner {
     text-transform: uppercase;
 }
 
+.user .verificar {
+    width: 100%;
+}
+
 .n-page {
     margin-bottom: 30px;
 }
@@ -659,9 +663,11 @@ img.banner {
     margin-top: 20px;
     padding: 20px;
 }
+
 .modal ul li {
     color: rgb(27,54,93);
 }
+
 .modal p {
     color: rgb(27,54,93);
     margin-bottom: 20px;
@@ -690,9 +696,9 @@ span.error {
     font-family: Verdana,Geneva,sans-serif;
     font-weight: normal;
     font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 15px;
+    float: right;
+    display: block;
+    margin-top: -15px;
 }
 
 @keyframes spin {
