@@ -513,13 +513,58 @@ table td:last-child {
     margin-left: 50px;
 }
 
-.loader {
-    border: 16px solid #fff; /* Light grey */
-    border-top: 16px solid rgb(248,113,55); /* Blue */
+.box-loader1 {
+    margin: auto;
+    width: 20px;
+}
+
+.loader1 {
+  border: 3px solid #00205c; /* Blue */
+  border-radius: 50%;
+  border-top: 3px solid #fc4c04; /* Orange */
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.box-loader2 {
+    margin: auto;
+    width: 40px;
+}
+
+.loader2 {
+  border: 4px solid #00205c; /* Blue */
+  border-radius: 50%;
+  border-top: 4px solid #fc4c04; /* Orange */
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.box-loader1 {
+    margin: auto;
+    width: 160px;
+}
+
+.loader3 {
+    border: 12px solid #00205c; /* Blue */
+    border-top: 12px solid #fc4c04; /* Orange */
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 label .fa-info-circle {
@@ -699,11 +744,6 @@ span.error {
     float: right;
     display: block;
     margin-top: -15px;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 .aba-teste {
