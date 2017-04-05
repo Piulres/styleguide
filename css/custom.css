@@ -2,6 +2,14 @@
     display: none;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -556,7 +564,26 @@ table td:last-child {
     width: 160px;
 }
 
+.box-loader1 {
+    margin: auto;
+    width: 20px;
+    float: right;
+}
+
+.box-loader2 {
+    margin: auto;
+    width: 20px;
+}
+
+.box-loader3 {
+    margin: auto;
+    width: 20px;
+}
+
 .loader1 {
+  position: absolute;
+  top: 37px;
+  right: 25px;
   border: 3px solid #00205c; /* Blue */
   border-radius: 50%;
   border-top: 3px solid #fc4c04; /* Orange */
