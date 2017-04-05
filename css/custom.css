@@ -137,6 +137,7 @@ footer p {
 .list-itens ul li .ico-download {
     width: 15px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 
@@ -532,7 +533,7 @@ table td:last-child {
     animation: spin 2s linear infinite;
 }
 
-#myModal.modal {
+#myModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
@@ -797,8 +798,12 @@ span.error {
     font-weight: normal;
     font-size: 10px;
     float: right;
-    display: block;
+    display: none;
     margin-top: -15px;
+}
+
+.has-error span.error {
+    display: block;
 }
 
 .aba-teste {
