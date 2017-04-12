@@ -299,6 +299,27 @@ table td:last-child {
 
 .shield-detalhe {
     padding: 30px;
+    position: relative;
+}
+
+.shield-detalhe-opt {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgb(27, 54, 93);
+    font-weight: 600;
+    cursor: pointer;
+}
+.shield-detalhe-opt:hover {
+    color: rgb(248,113,55)!important;
+}
+
+.shield-detalhe-opt i {
+    font-size: 20px;
+    color: rgb(181, 181, 181);
 }
 
 .shield-detalhe .type,
@@ -346,6 +367,13 @@ table td:last-child {
     color: #666;
     font-size: 12px;
 }
+
+.detalhes img.avatar {
+    border-radius: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
 .detalhes .panel-title a:hover {
     text-decoration: none;
 }
@@ -363,11 +391,19 @@ table td:last-child {
     display: block;
     height: auto;
 }
+.detalhes .panel-title .add:hover,
+.detalhes .panel-title .add:active,
+.detalhes .panel-title .add:focus,
+.detalhes .panel-title .add {
+    text-decoration: none;
+}
 
-.detalhes .panel-title .add img  {
+.detalhes .panel-title .add img,
+.detalhes .panel-title .add i  {
     position: absolute;
     top: 15px;
     right: 15px;
+    font-size: 20px;
 }
 
 .detalhes .box-title {
