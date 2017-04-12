@@ -52,6 +52,14 @@ $( document ).ready(function() {
 		e.preventDefault();
     });
 
+    $('.filter').on('click', function(e) {
+		$('.filter-form').toggleClass("display");		
+    });
+
+    $('.aplyfilter').on('click', function(e) {
+		$('.active-filters').toggleClass("display");		
+    });
+
     // Loader Page
 
     // Get the modal
