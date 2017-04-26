@@ -46,6 +46,9 @@ footer p {
     padding-top: 45px;
 }
 
+input {
+    outline: 0;
+}
 
 .custom-datepicker i.fa-calendar {    
     color: #54698d;
@@ -94,6 +97,15 @@ footer p {
     font-size: 16px;
     font-weight: 600;
     color: #00205c;
+    margin-bottom: 30px;
+}
+
+.page-subtitle {
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fc4c04;
     margin-bottom: 30px;
 }
 
@@ -311,9 +323,9 @@ table td:last-child {
 }
 
 .shield-detalhe-opt {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+    margin-top: -40px;
+    margin-right: 20px;
+    float: right;
     text-align: center;
     font-size: 10px;
     text-transform: uppercase;
@@ -321,6 +333,8 @@ table td:last-child {
     font-weight: 600;
     cursor: pointer;
 }
+
+.shield-detalhe-opt i:hover,
 .shield-detalhe-opt:hover {
     color: rgb(248,113,55)!important;
 }
@@ -441,7 +455,8 @@ i.warning {
 
 .navigation .item {
     height: 45px;
-    line-height: 45px;
+    /*line-height: 45px;*/
+    padding-top: 8px;
     background-color: rgb(245,245,245);
     border: 1px solid rgb(220,220,220);
     color: rgb(220,220,220);
@@ -545,7 +560,7 @@ i.warning {
 }
 
 .navigation .item.edt::after {
-    content: initial;
+    /*content: initial;*/
 }
 
 .navigation .item.act::after {
@@ -594,6 +609,7 @@ i.warning {
 }
 
 .solicitacao p.header,
+.simulador p.header,
 .proposta p.header {
     font-size: 12px;
     text-transform: uppercase;
@@ -602,6 +618,7 @@ i.warning {
 }
 
 .solicitacao .title,
+.simulador .title,
 .proposta .title {
     margin-top: 20px;
     font-size: 10px;
@@ -611,27 +628,32 @@ i.warning {
 }
 
 .solicitacao .value,
+.simulador .value,
 .proposta .value {
     color: #666;
     font-size: 12px;
 }
 
 .solicitacao h2 span,
+.simulador h2 span,
 .proposta h2 span {
     font-weight: 600;
 }
 
 .solicitacao .documento,
+.simulador .documento,
 .proposta .documento {
     color: rgb(0,32,92);
 }
 
 .solicitacao .box,
+.simulador .box,
 .proposta .box {
     margin-top: 50px;
 }
 
 .solicitacao .box-doc,
+.simulador .box-doc,
 .proposta .box-doc {
     text-align: center;
     display: block;
@@ -648,11 +670,13 @@ i.warning {
 }
 
 .solicitacao .box-doc img,
+.simulador .box-doc img,
 .proposta .box-doc img {
     margin-top: 7px;
 }
 
 .solicitacao .box-doc p,
+.simulador .box-doc p,
 .proposta .box-doc p {
     margin-top: 10px;
 }
@@ -663,13 +687,30 @@ i.fa.check {
     margin-right: 5px;
 }
 
+i.fa.cls {
+    color: #fc4c04;
+    font-size: 15px;    
+    margin-right: 5px;
+}
+
 i.fa.info {
     font-size: 15px;    
     margin-left: 5px;
 }
 
-.box-files {
-    padding-left: 20px;
+.box-files { 
+    float: left;
+    width: 100%;
+}
+
+.box-files .loader1 {
+    top: 18px!important;
+}
+
+.box-files .ico-type {
+    width: 30px;
+    height: 35px;
+    float: left;
 }
 
 .files {
@@ -678,6 +719,10 @@ i.fa.info {
     font-weight: 600;
     font-size: 10px;
     color: #666;
+}
+
+.files p {
+    padding-top: 10px;
 }
 
 .solicitacao .anexo,
@@ -1029,4 +1074,167 @@ p.error {
 
 .angucomplete-selected-row {
     background-color: rgb(248,113,55)!important;
+}
+
+.simulador fieldset .panel-group {
+    margin-bottom: 0;
+}
+
+.simulador fieldset .panel-group .panel {
+    margin: 0!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+}
+
+.simulador fieldset .panel-group .panel {
+    color: #00205c!important; 
+    background-color: transparent!important; 
+    height: auto!important; 
+    box-shadow: none!important; 
+    border: none!important; 
+    border-radius: 0!important; 
+}
+
+.simulador fieldset .panel-group .panel .panel-heading {
+     color: #00205c!important; 
+    background-color: transparent!important; 
+    height: auto!important; 
+    box-shadow: none!important; 
+    border: none!important; 
+    border-radius: 0!important;
+    padding: 10px 0!important;
+}
+
+.simulador fieldset .panel-group .panel .panel-heading .panel-title {
+    margin: 0!important;
+    height: auto!important; 
+    box-shadow: none!important; 
+    border: none!important; 
+    border-radius: 0!important;
+}
+
+.simulador fieldset .panel-group .panel .panel-heading a,
+.simulador fieldset .panel-group .panel .panel-heading a:hover,
+.simulador fieldset .panel-group .panel .panel-heading a:active {
+    text-decoration: none;
+         color: #00205c!important; 
+}
+
+.simulador fieldset .panel-group .panel .panel-heading a i {
+    font-size: 14px;
+    margin-left: 10px; 
+}
+
+.simulador fieldset .panel-group .panel-body {
+    background-color: transparent!important; 
+    height: auto!important; 
+    box-shadow: none!important; 
+    border: none!important; 
+    border-radius: 0!important;
+    padding: 0!important;
+}
+
+.simulador fieldset .panel-group .panel-body .btn-link {
+    padding-left: 0;
+}
+
+.simulador-box  {
+    height: 60px;
+    width: 100%;
+    text-align: left;
+    background-color: #DC6B2F;
+    border: 1px solid #CD5E2F;
+    float: left;
+}
+
+.simulador-box label {
+    display: block;
+    height: 58px;
+    float: left;
+    width: 65%;
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #fafafa;
+    text-transform: initial;
+}
+
+.simulador-box input {
+    width: 35%;
+    height: 58px;
+    vertical-align: middle;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    text-align: right;
+    background-color: #ED7D31;
+    border-radius: 15px;
+    color: #fff;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.simulador .box {
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.simulador .title {
+    margin-top: 30px;
+}
+
+.simulador .box-btn {
+    margin-top: 30px;
+}
+
+.simulador .page-title,
+.simulador .page-subtitle {
+    margin-bottom: 10px!important; 
+}
+
+.simulador .page-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.simulador .page-desc {
+    margin-bottom: 20px;
+}
+
+.simulador p .value {
+    background-color: #c3c3c3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #f86317;
+    font-size: 22px;
+}
+
+.simulador .blue {
+    color: #fff;
+    background-color: #00335e;
+}
+
+.shield-simulador ul {
+    list-style-type: none;
+}
+
+.simulador span.infos {
+    font-size: 10px;
+    color: #9c9c9c;
+}
+.simulador .shield-content {
+    padding-bottom: 0px;
+}
+
+p.enviar {
+    color: #00335e;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
 }
