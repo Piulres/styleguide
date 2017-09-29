@@ -1,10 +1,14 @@
+/* 
+    HEADER
+*/
+
 header .show-searching { display:none; }
 header .navbar-header .search-bar { margin:0px; }
 
 header.searching .hide-searching { display:none; }
 header.searching .show-searching { display:block; }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {    
     header .navbar-header {
         padding:24px;
     }
@@ -36,5 +40,42 @@ header.searching .show-searching { display:block; }
     header .navbar-header .fa-search { 
         color:#4d5686; 
         float:right;
+    }
+}
+
+/*
+    HOME
+*/
+
+
+@media (max-width: 767px) {
+    .home .box-left, .home .box-right {
+        padding:0px;
+    }
+
+    .box-right {
+        display: flex;
+        margin:10px 0px 20px;
+    }
+
+    .box-right .box-home {
+        flex: 1;        
+        text-align: center;
+        padding: 15px;
+        min-height: 0px;
+        margin:0px;
+    }
+
+    .box-home img {
+        float:none;
+        margin:0px;
+        width:23px;
+        padding-bottom:10px;
+    }
+
+    .box-home .title {
+        font-size: 12px;
+        padding: 0px;
+        margin-bottom: 0px;
     }
 }
