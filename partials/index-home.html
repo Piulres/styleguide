@@ -48,7 +48,7 @@
 
                 <div class="navbar-header">
                     
-                    <button type="button" class="pull-left navbar-toggle hide-searching" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <button id='btnSideMenu' type="button" class="pull-left navbar-toggle hide-searching">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -59,7 +59,7 @@
                     <span id='searchIcon' class='visible-xs fa fa-search fa-3x'></span>
 
                     <div class="nav-search nav navbar-nav show-searching">
-                        <input type="text" class="form-control search-bar" placeholder="Buscar">
+                        <input id='searchTop' type="text" class="form-control search-bar" placeholder="Buscar">
                     </div>
                 
                 </div>
@@ -100,7 +100,7 @@
 
     </header>
 
-    <section>
+    <section id="menu">
         
         <div class="menu-bar">
 
@@ -108,7 +108,18 @@
 
                 <div class="navbar navbar-default"> 
 
-                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <div>
+                            
+                        <div class='divclose visible-xs'>
+                            <span id='btnCloseMenu' class='fa fa-close fa-3x'></span>
+                        </div>
+
+                        <div class='menu-avatar visible-xs'>
+                            <img class="avatar" src="../img/ico-user-renan.png">
+                            <p class="user-id">User 215847</p>
+                            <p class="user-name">Renan Emidgio</p>
+                            <p class="user-logout">Logout</p>
+                        </div>
 
                         <ul class="nav navbar-nav">
 
@@ -151,9 +162,9 @@
                 <a href=""><img class="banner" src="../img/banner-home.jpg"></a>
             </div>
 
-            <div class="box-right col-md-4 col-xs-12">
+            <div class="box-right col-md-4 col-xs-12 is-logged">
 
-                <div class="box-home display box-non-auth">
+                <div class="box-home box-non-auth">
                     <img src="../img/ico_user_orange.png">
                     <div>
                         <p class="title">crie sua conta</p>

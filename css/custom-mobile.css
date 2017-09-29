@@ -1,6 +1,6 @@
-/* 
+/* ===============================================================
     HEADER
-*/
+=============================================================== */
 
 header .show-searching { display:none; }
 header .navbar-header .search-bar { margin:0px; }
@@ -18,7 +18,7 @@ header.searching .show-searching { display:block; }
     header .navbar-default .navbar-toggle {
         border:0px;
         padding:0px;
-        margin:7px 20px 7px 0px;
+        margin:7px 40px 7px 0px;
     }
     header .navbar-default .navbar-toggle .icon-bar {
         background-color:#4d5686;
@@ -40,13 +40,138 @@ header.searching .show-searching { display:block; }
     header .navbar-header .fa-search { 
         color:#4d5686; 
         float:right;
+        padding: 4px;
+        border-radius: 3px;
+        cursor:pointer;
+        border: 1px solid transparent;
+    }
+    header .navbar-header .fa-search.active {
+        background: #fbfbfb;
+        border-color:lightgray;
     }
 }
 
-/*
-    HOME
-*/
+/* ===============================================================
+    MENU 
+=============================================================== */
 
+@media (max-width: 767px) {
+
+    body.menu-open {
+        overflow:hidden;
+    }
+
+    #menu {
+        display:none;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        z-index: 10;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #menu .container > div {
+        overflow:scroll;
+    }
+
+    #menu .divclose {
+        text-align:right;
+        color:black;
+        padding:12px;
+    }
+
+
+    #menu .menu-avatar > p {
+        text-transform:none;
+    }
+
+    #menu .menu-avatar .avatar {
+        border-radius:50%;
+        width:80px;
+        margin-left:20px;
+        margin-right:10px;
+        float:left;
+    }
+
+    #menu .menu-avatar .user-id {
+        color:gray;        
+        font-size: 12px;
+        line-height: 12px;
+        padding-top: 10px
+    }
+
+    #menu .menu-avatar .user-name {
+        color:#4d5686;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    #menu .menu-avatar .user-logout {
+        color:#fc4c04;
+        font-size:12px;
+        line-height: 12px;
+        font-weight:normal;
+        text-decoration:underline;
+    }
+
+    #menu .container {
+        position:absolute;
+        padding:0px;
+        top:30px;
+        bottom:0px;
+        left:0px;
+        right:30px;
+    }
+
+    #menu .navbar.navbar-default {
+        height:100%;
+    }
+
+    #menu .navbar.navbar-default > div > ul {
+        width:100%;
+        margin:20px 0px 0px;
+        border-top:1px solid lightgray;
+    }
+
+    #menu .navbar-default .navbar-nav > li {
+        font-size:20px;
+        border-bottom:1px solid lightgray;
+    }
+
+    #menu .navbar-default .navbar-nav > li > a {
+        padding:20px;
+        border-bottom:0px;
+        border-left:7px solid transparent;
+    }
+
+    #menu .navbar-default .navbar-nav > .active > a, #menu .navbar-default .navbar-nav > .active > a:hover, #menu .navbar-default .navbar-nav > .active > a:focus {
+        color: #fc4c04;
+        background-color: #ffffff;
+        border-left: 7px solid #fc4c04;
+        border-bottom:0px;
+    }
+
+    #menu .navbar-default .navbar-nav > li > a:hover, #menu .navbar-default .navbar-nav > li > a:focus {
+        color: #fc4c04;
+        background-color: #ffffff;
+        border-left: 7px solid #fc4c04;
+        border-bottom:0px;
+    }
+}
+
+/* ===============================================================
+    HOME
+=============================================================== */
+
+.box-right .box-non-auth { display:block; }
+.box-right .box-auth { display:none; }
+
+.box-right.is-logged .box-non-auth { display:none; }
+.box-right.is-logged .box-auth { display:block; }
 
 @media (max-width: 767px) {
     .home .box-left, .home .box-right {
@@ -55,7 +180,7 @@ header.searching .show-searching { display:block; }
 
     .box-right {
         display: flex;
-        margin:10px 0px 20px;
+        margin:15px 0px 20px;
     }
 
     .box-right .box-home {
@@ -64,6 +189,7 @@ header.searching .show-searching { display:block; }
         padding: 15px;
         min-height: 0px;
         margin:0px;
+        border-radius:4px;
     }
 
     .box-home img {
@@ -77,5 +203,8 @@ header.searching .show-searching { display:block; }
         font-size: 12px;
         padding: 0px;
         margin-bottom: 0px;
+    }
+    .box-right .box-home:last-child {
+        margin-left:20px;
     }
 }
