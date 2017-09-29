@@ -1,0 +1,40 @@
+header .show-searching { display:none; }
+header .navbar-header .search-bar { margin:0px; }
+
+header.searching .hide-searching { display:none; }
+header.searching .show-searching { display:block; }
+
+@media (max-width: 767px) {
+    header .navbar-header {
+        padding:24px;
+    }
+    header .navbar-default {
+        min-height:90px;
+    }
+    header .navbar-default .navbar-toggle {
+        border:0px;
+        padding:0px;
+        margin:7px 20px 7px 0px;
+    }
+    header .navbar-default .navbar-toggle .icon-bar {
+        background-color:#4d5686;
+        height:4px;
+    }
+    header .navbar-brand {
+        height:auto;
+        margin:0px;
+        padding:0px;
+    }
+    header .logo {    
+        margin:0px;
+    }
+    header .navbar-header .nav-search {
+        padding:0px;
+        margin:0px;
+        width:calc(100% - 50px);
+    }
+    header .navbar-header .fa-search { 
+        color:#4d5686; 
+        float:right;
+    }
+}
