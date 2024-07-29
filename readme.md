@@ -14,7 +14,7 @@ Tonca uses a number of open source projects to work properly:
 
 ----
 ### Link
-[http://renan.zz.mu/GUI/]
+[https://renanemigdio.com/GUI/]
 
 
    [jQuery]: <http://jquery.com/>
